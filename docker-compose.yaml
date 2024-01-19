@@ -15,13 +15,13 @@ services:
     ports:
       - "5432:5432"
 
-#  app:
-#    image: olehdenkovych/scraping-jobs-app:latest
-#    depends_on:
-#      - scraping_jobs_db
-#    environment:
-#      SPRING_DATASOURCE_URL: 'jdbc:postgresql://scraping_jobs_db:5432/scraping_jobs_db'
-#    volumes:
-#      - scraping_jobs:/var/lig/postgresql/data
-#    ports:
-#      - "8081:8081"
+  app:
+    image: olehdenkovych/scraping-jobs-app:latest
+    depends_on:
+      - scraping_jobs_db
+    environment:
+      SPRING_DATASOURCE_URL: 'jdbc:postgresql://scraping_jobs_db:5432/scraping_jobs_db'
+    volumes:
+      - scraping_jobs:/var/lig/postgresql/data
+    ports:
+      - "8081:8081"
