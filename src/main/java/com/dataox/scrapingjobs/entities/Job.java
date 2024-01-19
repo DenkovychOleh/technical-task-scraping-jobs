@@ -43,6 +43,6 @@ public class Job {
     private LocalDateTime created;
 
     @ManyToOne
-    @JoinColumn(name = "job_fuction_id")
+    @JoinColumn(name = "job_function_id")
     private JobFunction jobFunction;
 }

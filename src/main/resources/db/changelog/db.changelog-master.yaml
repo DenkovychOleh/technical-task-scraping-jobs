@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - include:
+      file: db/changelog/changeset/create-job_functions.yaml
+  - include:
+      file: db/changelog/changeset/create-jobs.yaml
+  - include:
+      file: db/changelog/changeset/insert-jub-functions.yaml

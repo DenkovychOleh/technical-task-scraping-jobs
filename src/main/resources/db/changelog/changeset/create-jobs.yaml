@@ -1,0 +1,46 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-jobs
+      author: Oleh
+      changes:
+        - createTable:
+            tableName: jobs
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: position_name
+                  type: VARCHAR(255)
+              - column:
+                  name: organization_url
+                  type: VARCHAR(255)
+              - column:
+                  name: logo
+                  type: VARCHAR(255)
+              - column:
+                  name: organization_title
+                  type: VARCHAR(255)
+              - column:
+                  name: location
+                  type: VARCHAR(255)
+              - column:
+                  name: description
+                  type: TEXT
+              - column:
+                  name: tags
+                  type: VARCHAR(255)
+              - column:
+                  name: created
+                  type: TIMESTAMP
+                  constraints:
+                    nullable: false
+              - column:
+                  name: job_function_id
+                  type: BIGINT
+                  constraints:
+                    foreignKeyName: fk_jobs_job_functions
+                    references: job_functions(id)
