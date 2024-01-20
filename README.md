@@ -54,3 +54,11 @@ docker-compose down
 ```http request
 http://localhost:8081/swagger/swagger-ui/index.html
 ```
+
+## Additional Files in the Project Root
+**In the project's root directory, the following files have been added with preserved information:**
+ 
+- **jobs.csv**
+- **job_functions.csv**
+  
+These files contain additional data related to job vacancies and job functions.
