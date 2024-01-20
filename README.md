@@ -43,6 +43,7 @@ GET /api/v1/scraping-jobs/jobs
 docker-compose up --build
 ```
 The application will be accessible at http://localhost:8081.
+
 3. To stop the application, use the following command:
 ```bash
 docker-compose down
